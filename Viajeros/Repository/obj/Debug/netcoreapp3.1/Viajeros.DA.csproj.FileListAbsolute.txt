@@ -1,0 +1,9 @@
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.csprojAssemblyReference.cache
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.AssemblyInfoInputs.cache
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.AssemblyInfo.cs
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.csproj.CoreCompileInputs.cache
+/Users/ernestoandrade/Projects/Viajeros/Repository/bin/Debug/netcoreapp3.1/Viajeros.DA.deps.json
+/Users/ernestoandrade/Projects/Viajeros/Repository/bin/Debug/netcoreapp3.1/Viajeros.DA.dll
+/Users/ernestoandrade/Projects/Viajeros/Repository/bin/Debug/netcoreapp3.1/Viajeros.DA.pdb
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.dll
+/Users/ernestoandrade/Projects/Viajeros/Repository/obj/Debug/netcoreapp3.1/Viajeros.DA.pdb

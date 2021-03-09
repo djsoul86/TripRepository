@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Trip Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li id='liViajero' class="nav-item nav-cursor">
+                    <a class="nav-link"
+                        onclick="viajeroEvent(['containerViajes','containerReservas'],'containerViajero', 'liViajero',['liViaje','liReservar'])">Viajeros</a>
+                </li>
+                <li id='liViaje' class="nav-item nav-cursor">
+                    <a class="nav-link"
+                        onclick="viajeroEvent(['containerViajero','containerReservas'],'containerViajes','liViaje', ['liViajero',,'liReservar'])">Viajes</a>
+                </li>
+                <li id='liReservar' class="nav-item nav-cursor">
+                    <a class="nav-link"
+                        onclick="viajeroEvent(['containerViajero','containerViajes'],'containerReservas','liReservar', ['liViajero','liViaje'])">Reservar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="containerViajero" class="container">
+        <form id="formViajero">
+            <div class="form-group">
+                <label for="cedula">Cedula</label>
+                <input type="text" class="form-control" id="cedula" placeholder="Cedula">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Direccion</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Direccion">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Telefono">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br />
+        <table id="tblViajeros" class="table">
+            <thead>
+                <th>Cedula</th>
+                <th>Nombre</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <section id="containerViajes" class="container">
+        <form id="formViajes">
+            <div class="form-group">
+                <label for="codigo">Codigo Viaje</label>
+                <input required="true" minlength="1" type="text" class="form-control" id="codigo" placeholder="Codigo">
+            </div>
+            <div class="form-group">
+                <label for="plazas">Numero Plazas</label>
+                <input min="1" required="true" type="number" class="form-control" id="plazas" placeholder="Plazas">
+            </div>
+            <div class="form-group">
+                <label for="origen">Origen</label>
+                <select required="true" id="origen" class="custom-select">
+                    <option selected>Seleccione Pais Origen</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="destino">Destino</label>
+                <select required="true" id="destino" class="custom-select">
+                    <option selected>Seleccione Pais Destino</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="number" required="true" min="1" class="form-control" id="precio" placeholder="Precio">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br />
+        <table id="tblViajes" class="table">
+            <thead>
+                <th>Codigo</th>
+                <th>Plazas</th>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Precio</th>
+                <th></th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+    <section id="containerReservas" class="container containerReservas">
+        <form id="formReservas">
+            <div class="form-group">
+                <label for="viajeroOption">Usuario</label>
+                <select required="true" id="viajeroOption" class="custom-select">
+                    <option selected>Seleccione Usuario</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="viajeOption">Viaje</label>
+                <select required="true" id="viajeOption" class="custom-select">
+                    <option selected>Seleccione Viaje</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <br />
+        <table id="tblReservas" class="table">
+            <thead>
+                <th>Usuario</th>
+                <th>Viaje</th>
+                <th></th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

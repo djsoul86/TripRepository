@@ -1,0 +1,12 @@
+/Users/ernestoandrade/Projects/Viajeros/Services/bin/Debug/netcoreapp3.1/Viajeros.Services.deps.json
+/Users/ernestoandrade/Projects/Viajeros/Services/bin/Debug/netcoreapp3.1/Viajeros.Services.dll
+/Users/ernestoandrade/Projects/Viajeros/Services/bin/Debug/netcoreapp3.1/Viajeros.Services.pdb
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.csprojAssemblyReference.cache
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.AssemblyInfoInputs.cache
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.AssemblyInfo.cs
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.csproj.CoreCompileInputs.cache
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.dll
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.pdb
+/Users/ernestoandrade/Projects/Viajeros/Services/bin/Debug/netcoreapp3.1/Viajeros.DA.dll
+/Users/ernestoandrade/Projects/Viajeros/Services/bin/Debug/netcoreapp3.1/Viajeros.DA.pdb
+/Users/ernestoandrade/Projects/Viajeros/Services/obj/Debug/netcoreapp3.1/Viajeros.Services.csproj.CopyComplete

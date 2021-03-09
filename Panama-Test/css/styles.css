@@ -1,0 +1,11 @@
+.container {
+    width: 30%;
+}
+
+.containerReservas {
+    width: 50%;
+}
+
+.nav-cursor {
+    cursor:pointer
+}
